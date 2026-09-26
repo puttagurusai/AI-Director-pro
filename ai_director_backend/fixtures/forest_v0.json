@@ -1,0 +1,596 @@
+{
+  "schema_version": "0.1",
+  "job_id": "01jfix01forest0000000000000000",
+  "prompt": "Forest clearing, wet ground, logs, dense trees.",
+  "domain": "forest",
+  "world": {
+    "extent_x_m": 50.0,
+    "extent_y_m": 50.0,
+    "height_m": 20.0,
+    "wall_thickness_m": 0.15,
+    "openings": [],
+    "ground": "dirt",
+    "terrain_amp_m": 0.25
+  },
+  "objects": [
+    {
+      "id": "tree_1",
+      "category": "tree",
+      "part": "foliage",
+      "relations": [
+        {
+          "type": "scatter",
+          "target": "ground",
+          "clearance_m": 2.0
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "id": "tree_2",
+      "category": "tree",
+      "part": "foliage",
+      "relations": [
+        {
+          "type": "scatter",
+          "target": "ground",
+          "clearance_m": 2.0
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "id": "tree_3",
+      "category": "tree",
+      "part": "foliage",
+      "relations": [
+        {
+          "type": "scatter",
+          "target": "ground",
+          "clearance_m": 2.0
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "id": "tree_4",
+      "category": "tree",
+      "part": "foliage",
+      "relations": [
+        {
+          "type": "scatter",
+          "target": "ground",
+          "clearance_m": 2.0
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "id": "tree_5",
+      "category": "tree",
+      "part": "foliage",
+      "relations": [
+        {
+          "type": "scatter",
+          "target": "ground",
+          "clearance_m": 2.0
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "id": "tree_6",
+      "category": "tree",
+      "part": "foliage",
+      "relations": [
+        {
+          "type": "scatter",
+          "target": "ground",
+          "clearance_m": 2.0
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "id": "tree_7",
+      "category": "tree",
+      "part": "foliage",
+      "relations": [
+        {
+          "type": "scatter",
+          "target": "ground",
+          "clearance_m": 2.0
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "id": "tree_8",
+      "category": "tree",
+      "part": "foliage",
+      "relations": [
+        {
+          "type": "scatter",
+          "target": "ground",
+          "clearance_m": 2.0
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "id": "rock_1",
+      "category": "rock",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.5,
+        1.2,
+        0.8
+      ]
+    },
+    {
+      "id": "rock_2",
+      "category": "rock",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.5,
+        1.2,
+        0.8
+      ]
+    },
+    {
+      "id": "log_1",
+      "category": "log",
+      "part": "beam",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        0.4,
+        0.4
+      ]
+    },
+    {
+      "id": "bush_1",
+      "category": "bush",
+      "part": "foliage",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.2,
+        1.2,
+        1.4
+      ]
+    }
+  ],
+  "layout": {
+    "tree_1": {
+      "location_m": [
+        8,
+        8,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "tree_2": {
+      "location_m": [
+        18,
+        10,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "tree_3": {
+      "location_m": [
+        30,
+        8,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "tree_4": {
+      "location_m": [
+        42,
+        12,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "tree_5": {
+      "location_m": [
+        10,
+        28,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "tree_6": {
+      "location_m": [
+        22,
+        32,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "tree_7": {
+      "location_m": [
+        36,
+        26,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "tree_8": {
+      "location_m": [
+        44,
+        40,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "rock_1": {
+      "location_m": [
+        16,
+        20,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "rock_2": {
+      "location_m": [
+        28,
+        18,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "log_1": {
+      "location_m": [
+        20,
+        40,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "bush_1": {
+      "location_m": [
+        38,
+        36,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    }
+  },
+  "camera": {
+    "preset": "wide_24",
+    "look_at_id": "log_1"
+  },
+  "camera_pose": {
+    "location_m": [
+      5.0,
+      5.0,
+      1.8
+    ],
+    "look_at_m": [
+      25.0,
+      25.0,
+      1.0
+    ],
+    "focal_mm": 24.0
+  },
+  "lights": [
+    {
+      "role": "key",
+      "type": "AREA",
+      "energy": 250,
+      "color_temp_k": 4500,
+      "offset_from_camera_m": [
+        1.2,
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "role": "fill",
+      "type": "AREA",
+      "energy": 80,
+      "color_temp_k": 5000,
+      "offset_from_camera_m": [
+        -1.5,
+        0.2,
+        0.4
+      ]
+    },
+    {
+      "role": "rim",
+      "type": "AREA",
+      "energy": 40,
+      "color_temp_k": 5500,
+      "offset_from_camera_m": [
+        0.0,
+        0.3,
+        1.2
+      ]
+    }
+  ],
+  "hdri": null,
+  "light_preset": "overcast",
+  "fallbacks": [
+    {
+      "object_id": "tree_1",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "tree_2",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "tree_3",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "tree_4",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "tree_5",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "tree_6",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "tree_7",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "tree_8",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "rock_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "rock_2",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "log_1",
+      "reason": "no_catalog_hit",
+      "primitive": "beam"
+    },
+    {
+      "object_id": "bush_1",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    }
+  ],
+  "warnings": [
+    "phase0:primitives_only"
+  ],
+  "attribution": [],
+  "status": "ready"
+}

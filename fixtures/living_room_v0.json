@@ -1,0 +1,735 @@
+{
+  "schema_version": "0.1",
+  "job_id": "01jfix01livingroom000000000000",
+  "prompt": "Small modern living room, sofa facing a window, plant next to the sofa, coffee table in front, warm evening.",
+  "domain": "interior",
+  "world": {
+    "extent_x_m": 5.5,
+    "extent_y_m": 4.2,
+    "height_m": 2.7,
+    "wall_thickness_m": 0.15,
+    "openings": [
+      {
+        "type": "window",
+        "wall": "wall.north",
+        "offset_m": 1.6,
+        "width_m": 1.8,
+        "sill_m": 0.9,
+        "height_m": 1.4
+      },
+      {
+        "type": "door",
+        "wall": "wall.east",
+        "offset_m": 0.4,
+        "width_m": 0.9,
+        "sill_m": 0.0,
+        "height_m": 2.1
+      }
+    ],
+    "ground": "floor",
+    "terrain_amp_m": 0.0
+  },
+  "objects": [
+    {
+      "id": "rug_1",
+      "category": "rug",
+      "part": "slab",
+      "relations": [
+        {
+          "type": "centered_on",
+          "target": "floor",
+          "clearance_m": 0.0
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.4,
+        1.6,
+        0.02
+      ]
+    },
+    {
+      "id": "sofa_1",
+      "category": "sofa",
+      "part": "seat",
+      "relations": [
+        {
+          "type": "against_wall",
+          "target": "wall.south",
+          "clearance_m": 0.08
+        },
+        {
+          "type": "facing",
+          "target": "wall.north",
+          "clearance_m": 0.0
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.57,
+        0.66,
+        0.8
+      ]
+    },
+    {
+      "id": "table_1",
+      "category": "coffee_table",
+      "part": "mass",
+      "relations": [
+        {
+          "type": "in_front_of",
+          "target": "sofa_1",
+          "clearance_m": 0.45
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.54,
+        0.97,
+        0.52
+      ]
+    },
+    {
+      "id": "plant_1",
+      "category": "plant",
+      "part": "proxy_cylinder",
+      "relations": [
+        {
+          "type": "next_to",
+          "target": "sofa_1",
+          "clearance_m": 0.2
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.45,
+        0.45,
+        1.2
+      ]
+    },
+    {
+      "id": "plant_2",
+      "category": "plant",
+      "part": "proxy_cylinder",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.45,
+        0.45,
+        1.1
+      ]
+    },
+    {
+      "id": "armchair_1",
+      "category": "armchair",
+      "part": "seat",
+      "relations": [
+        {
+          "type": "against_wall",
+          "target": "wall.west",
+          "clearance_m": 0.08
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.85,
+        0.85,
+        0.9
+      ]
+    },
+    {
+      "id": "lamp_1",
+      "category": "lamp_floor",
+      "part": "pole",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.3,
+        0.3,
+        1.5
+      ]
+    },
+    {
+      "id": "shelf_1",
+      "category": "bookshelf",
+      "part": "mass",
+      "relations": [
+        {
+          "type": "against_wall",
+          "target": "wall.west",
+          "clearance_m": 0.08
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.8,
+        0.3,
+        1.8
+      ]
+    },
+    {
+      "id": "art_1",
+      "category": "art_frame",
+      "part": "board",
+      "relations": [
+        {
+          "type": "against_wall",
+          "target": "wall.north",
+          "clearance_m": 0.05
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.7,
+        0.04,
+        0.9
+      ]
+    },
+    {
+      "id": "ottoman_1",
+      "category": "ottoman",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.8,
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "id": "chair_1",
+      "category": "dining_chair",
+      "part": "seat",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.5,
+        0.55,
+        0.95
+      ]
+    },
+    {
+      "id": "chair_2",
+      "category": "dining_chair",
+      "part": "seat",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.5,
+        0.55,
+        0.95
+      ]
+    },
+    {
+      "id": "stool_1",
+      "category": "stool",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.4,
+        0.4,
+        0.45
+      ]
+    },
+    {
+      "id": "side_1",
+      "category": "side_table",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.45,
+        0.45,
+        0.55
+      ]
+    },
+    {
+      "id": "dresser_1",
+      "category": "dresser",
+      "part": "mass",
+      "relations": [
+        {
+          "type": "against_wall",
+          "target": "wall.east",
+          "clearance_m": 0.08
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.2,
+        0.5,
+        0.8
+      ]
+    }
+  ],
+  "layout": {
+    "rug_1": {
+      "location_m": [
+        2.75,
+        2.1,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "sofa_1": {
+      "location_m": [
+        2.75,
+        0.41,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "table_1": {
+      "location_m": [
+        2.75,
+        1.675,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "plant_1": {
+      "location_m": [
+        3.96,
+        0.41,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "plant_2": {
+      "location_m": [
+        1.54,
+        0.41,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "armchair_1": {
+      "location_m": [
+        0.505,
+        2.4,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.5708
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "lamp_1": {
+      "location_m": [
+        1.2,
+        2.4,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "shelf_1": {
+      "location_m": [
+        0.23,
+        3.55,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.5708
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "art_1": {
+      "location_m": [
+        2.75,
+        4.13,
+        1.4
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        3.1416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "wall.north",
+      "snap_z_pending": false,
+      "infeasibility": null
+    },
+    "ottoman_1": {
+      "location_m": [
+        1.55,
+        1.7,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "chair_1": {
+      "location_m": [
+        4.4,
+        2.4,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "chair_2": {
+      "location_m": [
+        4.4,
+        3.2,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "stool_1": {
+      "location_m": [
+        3.7,
+        3.5,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "side_1": {
+      "location_m": [
+        4.3,
+        0.5,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "dresser_1": {
+      "location_m": [
+        5.17,
+        2.8,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.5708
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "floor",
+      "snap_z_pending": true,
+      "infeasibility": null
+    }
+  },
+  "camera": {
+    "preset": "establishing_35",
+    "look_at_id": "sofa_1"
+  },
+  "camera_pose": {
+    "location_m": [
+      0.7,
+      3.7,
+      1.6
+    ],
+    "look_at_m": [
+      2.75,
+      0.41,
+      0.4
+    ],
+    "focal_mm": 35.0
+  },
+  "lights": [
+    {
+      "role": "key",
+      "type": "AREA",
+      "energy": 250,
+      "color_temp_k": 4500,
+      "offset_from_camera_m": [
+        1.2,
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "role": "fill",
+      "type": "AREA",
+      "energy": 80,
+      "color_temp_k": 5000,
+      "offset_from_camera_m": [
+        -1.5,
+        0.2,
+        0.4
+      ]
+    },
+    {
+      "role": "rim",
+      "type": "AREA",
+      "energy": 40,
+      "color_temp_k": 5500,
+      "offset_from_camera_m": [
+        0.0,
+        0.3,
+        1.2
+      ]
+    }
+  ],
+  "hdri": null,
+  "light_preset": "warm_interior",
+  "fallbacks": [
+    {
+      "object_id": "rug_1",
+      "reason": "no_catalog_hit",
+      "primitive": "slab"
+    },
+    {
+      "object_id": "sofa_1",
+      "reason": "no_catalog_hit",
+      "primitive": "seat"
+    },
+    {
+      "object_id": "table_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "plant_1",
+      "reason": "no_catalog_hit",
+      "primitive": "proxy_cylinder"
+    },
+    {
+      "object_id": "plant_2",
+      "reason": "no_catalog_hit",
+      "primitive": "proxy_cylinder"
+    },
+    {
+      "object_id": "armchair_1",
+      "reason": "no_catalog_hit",
+      "primitive": "seat"
+    },
+    {
+      "object_id": "lamp_1",
+      "reason": "no_catalog_hit",
+      "primitive": "pole"
+    },
+    {
+      "object_id": "shelf_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "art_1",
+      "reason": "no_catalog_hit",
+      "primitive": "board"
+    },
+    {
+      "object_id": "ottoman_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "chair_1",
+      "reason": "no_catalog_hit",
+      "primitive": "seat"
+    },
+    {
+      "object_id": "chair_2",
+      "reason": "no_catalog_hit",
+      "primitive": "seat"
+    },
+    {
+      "object_id": "stool_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "side_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "dresser_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    }
+  ],
+  "warnings": [
+    "phase0:primitives_only"
+  ],
+  "attribution": [],
+  "status": "ready"
+}

@@ -1,0 +1,470 @@
+{
+  "schema_version": "0.1",
+  "job_id": "01jfix01beach00000000000000000",
+  "prompt": "Beach, rocks, umbrellas, driftwood, sunset.",
+  "domain": "beach",
+  "world": {
+    "extent_x_m": 40.0,
+    "extent_y_m": 28.0,
+    "height_m": 10.0,
+    "wall_thickness_m": 0.15,
+    "openings": [],
+    "ground": "sand",
+    "terrain_amp_m": 0.05
+  },
+  "objects": [
+    {
+      "id": "rock_1",
+      "category": "rock",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.5,
+        1.2,
+        0.8
+      ]
+    },
+    {
+      "id": "rock_2",
+      "category": "rock",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.5,
+        1.2,
+        0.8
+      ]
+    },
+    {
+      "id": "rock_3",
+      "category": "rock",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.5,
+        1.2,
+        0.8
+      ]
+    },
+    {
+      "id": "umb_1",
+      "category": "umbrella",
+      "part": "pole",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.8,
+        1.8,
+        2.2
+      ]
+    },
+    {
+      "id": "umb_2",
+      "category": "umbrella",
+      "part": "pole",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.8,
+        1.8,
+        2.2
+      ]
+    },
+    {
+      "id": "towel_1",
+      "category": "towel",
+      "part": "slab",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.8,
+        0.8,
+        0.04
+      ]
+    },
+    {
+      "id": "towel_2",
+      "category": "towel",
+      "part": "slab",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.8,
+        0.8,
+        0.04
+      ]
+    },
+    {
+      "id": "wood_1",
+      "category": "driftwood",
+      "part": "beam",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        0.4,
+        0.3
+      ]
+    },
+    {
+      "id": "bush_1",
+      "category": "bush",
+      "part": "foliage",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.2,
+        1.2,
+        1.4
+      ]
+    },
+    {
+      "id": "board_1",
+      "category": "sign",
+      "part": "board",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.8,
+        0.08,
+        1.8
+      ]
+    }
+  ],
+  "layout": {
+    "rock_1": {
+      "location_m": [
+        8.0,
+        22.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "rock_2": {
+      "location_m": [
+        14.0,
+        24.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "rock_3": {
+      "location_m": [
+        32.0,
+        21.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "umb_1": {
+      "location_m": [
+        12.0,
+        10.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "umb_2": {
+      "location_m": [
+        18.0,
+        9.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "towel_1": {
+      "location_m": [
+        12.0,
+        11.5,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "towel_2": {
+      "location_m": [
+        18.0,
+        10.5,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "wood_1": {
+      "location_m": [
+        26.0,
+        16.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.6
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "bush_1": {
+      "location_m": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "board_1": {
+      "location_m": [
+        4.0,
+        8.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    }
+  },
+  "camera": {
+    "preset": "establishing_35",
+    "look_at_id": "umb_1"
+  },
+  "camera_pose": {
+    "location_m": [
+      4.0,
+      4.0,
+      1.6
+    ],
+    "look_at_m": [
+      18.0,
+      14.0,
+      0.5
+    ],
+    "focal_mm": 35.0
+  },
+  "lights": [
+    {
+      "role": "key",
+      "type": "AREA",
+      "energy": 250,
+      "color_temp_k": 4500,
+      "offset_from_camera_m": [
+        1.2,
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "role": "fill",
+      "type": "AREA",
+      "energy": 80,
+      "color_temp_k": 5000,
+      "offset_from_camera_m": [
+        -1.5,
+        0.2,
+        0.4
+      ]
+    },
+    {
+      "role": "rim",
+      "type": "AREA",
+      "energy": 40,
+      "color_temp_k": 5500,
+      "offset_from_camera_m": [
+        0.0,
+        0.3,
+        1.2
+      ]
+    }
+  ],
+  "hdri": null,
+  "light_preset": "sunset",
+  "fallbacks": [
+    {
+      "object_id": "rock_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "rock_2",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "rock_3",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "umb_1",
+      "reason": "no_catalog_hit",
+      "primitive": "pole"
+    },
+    {
+      "object_id": "umb_2",
+      "reason": "no_catalog_hit",
+      "primitive": "pole"
+    },
+    {
+      "object_id": "towel_1",
+      "reason": "no_catalog_hit",
+      "primitive": "slab"
+    },
+    {
+      "object_id": "towel_2",
+      "reason": "no_catalog_hit",
+      "primitive": "slab"
+    },
+    {
+      "object_id": "wood_1",
+      "reason": "no_catalog_hit",
+      "primitive": "beam"
+    },
+    {
+      "object_id": "bush_1",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "board_1",
+      "reason": "no_catalog_hit",
+      "primitive": "board"
+    }
+  ],
+  "warnings": [
+    "phase0:primitives_only"
+  ],
+  "attribution": [],
+  "status": "ready"
+}

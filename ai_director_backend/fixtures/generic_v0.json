@@ -1,0 +1,236 @@
+{
+  "schema_version": "0.1",
+  "job_id": "01jfix01generic000000000000000",
+  "prompt": "Generic ground with a few blocks.",
+  "domain": "generic",
+  "world": {
+    "extent_x_m": 20.0,
+    "extent_y_m": 20.0,
+    "height_m": 8.0,
+    "wall_thickness_m": 0.15,
+    "openings": [],
+    "ground": "floor",
+    "terrain_amp_m": 0.0
+  },
+  "objects": [
+    {
+      "id": "mass_1",
+      "category": "prop_a",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "mass_2",
+      "category": "prop_b",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "pole_1",
+      "category": "pole",
+      "part": "pole",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.15,
+        0.15,
+        3.0
+      ]
+    },
+    {
+      "id": "slab_1",
+      "category": "platform",
+      "part": "slab",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        4.0,
+        4.0,
+        0.15
+      ]
+    }
+  ],
+  "layout": {
+    "mass_1": {
+      "location_m": [
+        6.0,
+        8.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "mass_2": {
+      "location_m": [
+        14.0,
+        8.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "pole_1": {
+      "location_m": [
+        10.0,
+        14.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "slab_1": {
+      "location_m": [
+        10.0,
+        8.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    }
+  },
+  "camera": {
+    "preset": "medium_50",
+    "look_at_id": "slab_1"
+  },
+  "camera_pose": {
+    "location_m": [
+      2.0,
+      2.0,
+      1.6
+    ],
+    "look_at_m": [
+      10.0,
+      8.0,
+      0.5
+    ],
+    "focal_mm": 50.0
+  },
+  "lights": [
+    {
+      "role": "key",
+      "type": "AREA",
+      "energy": 250,
+      "color_temp_k": 4500,
+      "offset_from_camera_m": [
+        1.2,
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "role": "fill",
+      "type": "AREA",
+      "energy": 80,
+      "color_temp_k": 5000,
+      "offset_from_camera_m": [
+        -1.5,
+        0.2,
+        0.4
+      ]
+    },
+    {
+      "role": "rim",
+      "type": "AREA",
+      "energy": 40,
+      "color_temp_k": 5500,
+      "offset_from_camera_m": [
+        0.0,
+        0.3,
+        1.2
+      ]
+    }
+  ],
+  "hdri": null,
+  "light_preset": "high_key",
+  "fallbacks": [
+    {
+      "object_id": "mass_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "mass_2",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "pole_1",
+      "reason": "no_catalog_hit",
+      "primitive": "pole"
+    },
+    {
+      "object_id": "slab_1",
+      "reason": "no_catalog_hit",
+      "primitive": "slab"
+    }
+  ],
+  "warnings": [
+    "phase0:primitives_only"
+  ],
+  "attribution": [],
+  "status": "ready"
+}

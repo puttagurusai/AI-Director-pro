@@ -1,0 +1,548 @@
+{
+  "schema_version": "0.1",
+  "job_id": "01jfix01city000000000000000000",
+  "prompt": "City street, two building masses, streetlamps, a food-cart proxy.",
+  "domain": "city",
+  "world": {
+    "extent_x_m": 40.0,
+    "extent_y_m": 24.0,
+    "height_m": 30.0,
+    "wall_thickness_m": 0.15,
+    "openings": [],
+    "ground": "pavement",
+    "terrain_amp_m": 0.0
+  },
+  "objects": [
+    {
+      "id": "street_1",
+      "category": "path",
+      "part": "slab",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        36.0,
+        8.0,
+        0.1
+      ]
+    },
+    {
+      "id": "walk_w",
+      "category": "sidewalk",
+      "part": "slab",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        36.0,
+        3.0,
+        0.08
+      ]
+    },
+    {
+      "id": "walk_e",
+      "category": "sidewalk",
+      "part": "slab",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        36.0,
+        3.0,
+        0.08
+      ]
+    },
+    {
+      "id": "bldg_1",
+      "category": "building_mass",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        10.0,
+        8.0,
+        14.0
+      ]
+    },
+    {
+      "id": "bldg_2",
+      "category": "building_mass",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        12.0,
+        8.0,
+        18.0
+      ]
+    },
+    {
+      "id": "lamp_1",
+      "category": "streetlamp",
+      "part": "pole",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.2,
+        0.2,
+        4.5
+      ]
+    },
+    {
+      "id": "lamp_2",
+      "category": "streetlamp",
+      "part": "pole",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.2,
+        0.2,
+        4.5
+      ]
+    },
+    {
+      "id": "lamp_3",
+      "category": "streetlamp",
+      "part": "pole",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.2,
+        0.2,
+        4.5
+      ]
+    },
+    {
+      "id": "sign_1",
+      "category": "sign",
+      "part": "board",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.8,
+        0.08,
+        1.8
+      ]
+    },
+    {
+      "id": "car_1",
+      "category": "vehicle",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        4.2,
+        1.8,
+        1.5
+      ]
+    },
+    {
+      "id": "kiosk_1",
+      "category": "kiosk",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        2.4
+      ]
+    },
+    {
+      "id": "bench_1",
+      "category": "bench",
+      "part": "seat",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.6,
+        0.5,
+        0.9
+      ]
+    }
+  ],
+  "layout": {
+    "street_1": {
+      "location_m": [
+        20.0,
+        12.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "walk_w": {
+      "location_m": [
+        20.0,
+        4.5,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "walk_e": {
+      "location_m": [
+        20.0,
+        19.5,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "bldg_1": {
+      "location_m": [
+        10.0,
+        3.5,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "bldg_2": {
+      "location_m": [
+        30.0,
+        20.5,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "lamp_1": {
+      "location_m": [
+        8.0,
+        8.2,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "lamp_2": {
+      "location_m": [
+        20.0,
+        8.2,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "lamp_3": {
+      "location_m": [
+        32.0,
+        15.8,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "sign_1": {
+      "location_m": [
+        14.0,
+        7.5,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "car_1": {
+      "location_m": [
+        22.0,
+        12.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.5708
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "kiosk_1": {
+      "location_m": [
+        6.0,
+        16.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "bench_1": {
+      "location_m": [
+        16.0,
+        19.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    }
+  },
+  "camera": {
+    "preset": "establishing_35",
+    "look_at_id": "street_1"
+  },
+  "camera_pose": {
+    "location_m": [
+      2.0,
+      12.0,
+      1.6
+    ],
+    "look_at_m": [
+      20.0,
+      12.0,
+      1.2
+    ],
+    "focal_mm": 35.0
+  },
+  "lights": [
+    {
+      "role": "key",
+      "type": "AREA",
+      "energy": 250,
+      "color_temp_k": 4500,
+      "offset_from_camera_m": [
+        1.2,
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "role": "fill",
+      "type": "AREA",
+      "energy": 80,
+      "color_temp_k": 5000,
+      "offset_from_camera_m": [
+        -1.5,
+        0.2,
+        0.4
+      ]
+    },
+    {
+      "role": "rim",
+      "type": "AREA",
+      "energy": 40,
+      "color_temp_k": 5500,
+      "offset_from_camera_m": [
+        0.0,
+        0.3,
+        1.2
+      ]
+    }
+  ],
+  "hdri": null,
+  "light_preset": "night_urban",
+  "fallbacks": [
+    {
+      "object_id": "street_1",
+      "reason": "no_catalog_hit",
+      "primitive": "slab"
+    },
+    {
+      "object_id": "walk_w",
+      "reason": "no_catalog_hit",
+      "primitive": "slab"
+    },
+    {
+      "object_id": "walk_e",
+      "reason": "no_catalog_hit",
+      "primitive": "slab"
+    },
+    {
+      "object_id": "bldg_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "bldg_2",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "lamp_1",
+      "reason": "no_catalog_hit",
+      "primitive": "pole"
+    },
+    {
+      "object_id": "lamp_2",
+      "reason": "no_catalog_hit",
+      "primitive": "pole"
+    },
+    {
+      "object_id": "lamp_3",
+      "reason": "no_catalog_hit",
+      "primitive": "pole"
+    },
+    {
+      "object_id": "sign_1",
+      "reason": "no_catalog_hit",
+      "primitive": "board"
+    },
+    {
+      "object_id": "car_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "kiosk_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "bench_1",
+      "reason": "no_catalog_hit",
+      "primitive": "seat"
+    }
+  ],
+  "warnings": [
+    "phase0:primitives_only"
+  ],
+  "attribution": [],
+  "status": "ready"
+}

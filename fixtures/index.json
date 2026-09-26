@@ -1,0 +1,12 @@
+{
+  "domain_files": {
+    "interior": "living_room_v0.json",
+    "park": "park_v0.json",
+    "forest": "forest_v0.json",
+    "city": "city_v0.json",
+    "zoo": "zoo_v0.json",
+    "space": "space_v0.json",
+    "beach": "beach_v0.json",
+    "generic": "generic_v0.json"
+  }
+}

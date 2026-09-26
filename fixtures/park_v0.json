@@ -1,0 +1,590 @@
+{
+  "schema_version": "0.1",
+  "job_id": "01jfix01park000000000000000000",
+  "prompt": "Park at dusk, a path, benches, trees, and a pond.",
+  "domain": "park",
+  "world": {
+    "extent_x_m": 40.0,
+    "extent_y_m": 30.0,
+    "height_m": 12.0,
+    "wall_thickness_m": 0.15,
+    "openings": [],
+    "ground": "grass",
+    "terrain_amp_m": 0.0
+  },
+  "objects": [
+    {
+      "id": "path_1",
+      "category": "path",
+      "part": "slab",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        24.0,
+        2.4,
+        0.08
+      ]
+    },
+    {
+      "id": "tree_1",
+      "category": "tree",
+      "part": "foliage",
+      "relations": [
+        {
+          "type": "scatter",
+          "target": "ground",
+          "clearance_m": 1.5
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "id": "tree_2",
+      "category": "tree",
+      "part": "foliage",
+      "relations": [
+        {
+          "type": "scatter",
+          "target": "ground",
+          "clearance_m": 1.5
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "id": "tree_3",
+      "category": "tree",
+      "part": "foliage",
+      "relations": [
+        {
+          "type": "scatter",
+          "target": "ground",
+          "clearance_m": 1.5
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "id": "tree_4",
+      "category": "tree",
+      "part": "foliage",
+      "relations": [
+        {
+          "type": "scatter",
+          "target": "ground",
+          "clearance_m": 1.5
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "id": "bench_1",
+      "category": "bench",
+      "part": "seat",
+      "relations": [
+        {
+          "type": "along",
+          "target": "path_1",
+          "clearance_m": 0.35
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.6,
+        0.5,
+        0.9
+      ]
+    },
+    {
+      "id": "bench_2",
+      "category": "bench",
+      "part": "seat",
+      "relations": [
+        {
+          "type": "along",
+          "target": "path_1",
+          "clearance_m": 0.35
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.6,
+        0.5,
+        0.9
+      ]
+    },
+    {
+      "id": "pond_1",
+      "category": "pond",
+      "part": "puddle",
+      "relations": [
+        {
+          "type": "centered_on",
+          "target": "ground",
+          "clearance_m": 0.0
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        6.0,
+        4.0,
+        0.05
+      ]
+    },
+    {
+      "id": "lamp_1",
+      "category": "streetlamp",
+      "part": "pole",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.2,
+        0.2,
+        4.5
+      ]
+    },
+    {
+      "id": "lamp_2",
+      "category": "streetlamp",
+      "part": "pole",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.2,
+        0.2,
+        4.5
+      ]
+    },
+    {
+      "id": "rock_1",
+      "category": "rock",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.5,
+        1.2,
+        0.8
+      ]
+    },
+    {
+      "id": "bush_1",
+      "category": "bush",
+      "part": "foliage",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.2,
+        1.2,
+        1.4
+      ]
+    }
+  ],
+  "layout": {
+    "path_1": {
+      "location_m": [
+        20.0,
+        15.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "tree_1": {
+      "location_m": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "tree_2": {
+      "location_m": [
+        34.0,
+        7.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "tree_3": {
+      "location_m": [
+        8.0,
+        24.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "tree_4": {
+      "location_m": [
+        32.0,
+        24.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "bench_1": {
+      "location_m": [
+        20.0,
+        16.85,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "bench_2": {
+      "location_m": [
+        20.0,
+        13.15,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        3.1416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "pond_1": {
+      "location_m": [
+        10.0,
+        10.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "lamp_1": {
+      "location_m": [
+        8.5,
+        15.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "lamp_2": {
+      "location_m": [
+        31.5,
+        15.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "rock_1": {
+      "location_m": [
+        12.0,
+        22.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "bush_1": {
+      "location_m": [
+        28.0,
+        8.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    }
+  },
+  "camera": {
+    "preset": "establishing_35",
+    "look_at_id": "path_1"
+  },
+  "camera_pose": {
+    "location_m": [
+      4.0,
+      4.0,
+      1.6
+    ],
+    "look_at_m": [
+      20.0,
+      15.0,
+      0.4
+    ],
+    "focal_mm": 35.0
+  },
+  "lights": [
+    {
+      "role": "key",
+      "type": "AREA",
+      "energy": 250,
+      "color_temp_k": 4500,
+      "offset_from_camera_m": [
+        1.2,
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "role": "fill",
+      "type": "AREA",
+      "energy": 80,
+      "color_temp_k": 5000,
+      "offset_from_camera_m": [
+        -1.5,
+        0.2,
+        0.4
+      ]
+    },
+    {
+      "role": "rim",
+      "type": "AREA",
+      "energy": 40,
+      "color_temp_k": 5500,
+      "offset_from_camera_m": [
+        0.0,
+        0.3,
+        1.2
+      ]
+    }
+  ],
+  "hdri": null,
+  "light_preset": "sunset",
+  "fallbacks": [
+    {
+      "object_id": "path_1",
+      "reason": "no_catalog_hit",
+      "primitive": "slab"
+    },
+    {
+      "object_id": "tree_1",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "tree_2",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "tree_3",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "tree_4",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "bench_1",
+      "reason": "no_catalog_hit",
+      "primitive": "seat"
+    },
+    {
+      "object_id": "bench_2",
+      "reason": "no_catalog_hit",
+      "primitive": "seat"
+    },
+    {
+      "object_id": "pond_1",
+      "reason": "no_catalog_hit",
+      "primitive": "puddle"
+    },
+    {
+      "object_id": "lamp_1",
+      "reason": "no_catalog_hit",
+      "primitive": "pole"
+    },
+    {
+      "object_id": "lamp_2",
+      "reason": "no_catalog_hit",
+      "primitive": "pole"
+    },
+    {
+      "object_id": "rock_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "bush_1",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    }
+  ],
+  "warnings": [
+    "phase0:primitives_only"
+  ],
+  "attribution": [],
+  "status": "ready"
+}

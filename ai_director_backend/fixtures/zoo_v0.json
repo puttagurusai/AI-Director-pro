@@ -1,0 +1,554 @@
+{
+  "schema_version": "0.1",
+  "job_id": "01jfix01zoo0000000000000000000",
+  "prompt": "Zoo: two enclosures, a path, a lion proxy, a sign.",
+  "domain": "zoo",
+  "world": {
+    "extent_x_m": 36.0,
+    "extent_y_m": 28.0,
+    "height_m": 10.0,
+    "wall_thickness_m": 0.15,
+    "openings": [],
+    "ground": "dirt",
+    "terrain_amp_m": 0.0
+  },
+  "objects": [
+    {
+      "id": "path_1",
+      "category": "path",
+      "part": "slab",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        28.0,
+        2.4,
+        0.08
+      ]
+    },
+    {
+      "id": "enc_1",
+      "category": "enclosure",
+      "part": "enclosure",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        8.0,
+        10.0,
+        3.5
+      ]
+    },
+    {
+      "id": "enc_2",
+      "category": "enclosure",
+      "part": "enclosure",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        8.0,
+        10.0,
+        3.5
+      ]
+    },
+    {
+      "id": "hab_1",
+      "category": "habitat",
+      "part": "slab",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        6.0,
+        7.0,
+        0.12
+      ]
+    },
+    {
+      "id": "hab_2",
+      "category": "habitat",
+      "part": "slab",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        6.0,
+        7.0,
+        0.12
+      ]
+    },
+    {
+      "id": "lion_1",
+      "category": "animal",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.2,
+        0.8,
+        1.2
+      ]
+    },
+    {
+      "id": "bear_1",
+      "category": "animal",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.4,
+        1.0,
+        1.4
+      ]
+    },
+    {
+      "id": "bench_1",
+      "category": "bench",
+      "part": "seat",
+      "relations": [
+        {
+          "type": "along",
+          "target": "path_1",
+          "clearance_m": 0.4
+        }
+      ],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.6,
+        0.5,
+        0.9
+      ]
+    },
+    {
+      "id": "sign_1",
+      "category": "sign",
+      "part": "board",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.8,
+        0.08,
+        1.8
+      ]
+    },
+    {
+      "id": "tree_1",
+      "category": "tree",
+      "part": "foliage",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "id": "kiosk_1",
+      "category": "kiosk",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        2.0,
+        2.0,
+        2.4
+      ]
+    },
+    {
+      "id": "lamp_1",
+      "category": "streetlamp",
+      "part": "pole",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.2,
+        0.2,
+        4.5
+      ]
+    }
+  ],
+  "layout": {
+    "path_1": {
+      "location_m": [
+        18.0,
+        14.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "enc_1": {
+      "location_m": [
+        8.0,
+        6.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "enc_2": {
+      "location_m": [
+        28.0,
+        6.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "hab_1": {
+      "location_m": [
+        8.0,
+        6.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "hab_2": {
+      "location_m": [
+        28.0,
+        6.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "lion_1": {
+      "location_m": [
+        8.0,
+        6.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "bear_1": {
+      "location_m": [
+        28.0,
+        6.5,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "bench_1": {
+      "location_m": [
+        18.0,
+        15.85,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "sign_1": {
+      "location_m": [
+        12.0,
+        15.5,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "tree_1": {
+      "location_m": [
+        18.0,
+        24.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "kiosk_1": {
+      "location_m": [
+        4.0,
+        20.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "lamp_1": {
+      "location_m": [
+        18.0,
+        12.2,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    }
+  },
+  "camera": {
+    "preset": "establishing_35",
+    "look_at_id": "enc_1"
+  },
+  "camera_pose": {
+    "location_m": [
+      18.0,
+      26.0,
+      1.7
+    ],
+    "look_at_m": [
+      18.0,
+      8.0,
+      0.8
+    ],
+    "focal_mm": 35.0
+  },
+  "lights": [
+    {
+      "role": "key",
+      "type": "AREA",
+      "energy": 250,
+      "color_temp_k": 4500,
+      "offset_from_camera_m": [
+        1.2,
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "role": "fill",
+      "type": "AREA",
+      "energy": 80,
+      "color_temp_k": 5000,
+      "offset_from_camera_m": [
+        -1.5,
+        0.2,
+        0.4
+      ]
+    },
+    {
+      "role": "rim",
+      "type": "AREA",
+      "energy": 40,
+      "color_temp_k": 5500,
+      "offset_from_camera_m": [
+        0.0,
+        0.3,
+        1.2
+      ]
+    }
+  ],
+  "hdri": null,
+  "light_preset": "soft_day",
+  "fallbacks": [
+    {
+      "object_id": "path_1",
+      "reason": "no_catalog_hit",
+      "primitive": "slab"
+    },
+    {
+      "object_id": "enc_1",
+      "reason": "no_catalog_hit",
+      "primitive": "enclosure"
+    },
+    {
+      "object_id": "enc_2",
+      "reason": "no_catalog_hit",
+      "primitive": "enclosure"
+    },
+    {
+      "object_id": "hab_1",
+      "reason": "no_catalog_hit",
+      "primitive": "slab"
+    },
+    {
+      "object_id": "hab_2",
+      "reason": "no_catalog_hit",
+      "primitive": "slab"
+    },
+    {
+      "object_id": "lion_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "bear_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "bench_1",
+      "reason": "no_catalog_hit",
+      "primitive": "seat"
+    },
+    {
+      "object_id": "sign_1",
+      "reason": "no_catalog_hit",
+      "primitive": "board"
+    },
+    {
+      "object_id": "tree_1",
+      "reason": "no_catalog_hit",
+      "primitive": "foliage"
+    },
+    {
+      "object_id": "kiosk_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "lamp_1",
+      "reason": "no_catalog_hit",
+      "primitive": "pole"
+    }
+  ],
+  "warnings": [
+    "phase0:primitives_only"
+  ],
+  "attribution": [],
+  "status": "ready"
+}

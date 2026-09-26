@@ -1,0 +1,180 @@
+
+
+
+
+Here is the comprehensive master plan for **AI Director Pro**. As Lead Architect, I have structured this blueprint using the latest findings from state-of-the-art research—specifically drawing on the **SceneCraft** framework (ICML 2024) and **OptiScene** spatial preference optimization (NeurIPS 2025).
+
+You can copy this document directly and send it to external AI models, technical advisors, or investors for review.
+
+---
+
+# AI Director Pro: Master Technical Product & Architecture Specification
+
+## 1. Executive Summary & Core Product Mission
+
+**AI Director Pro** is a lightweight, production-grade Blender extension (v4.2+) that converts narrative text prompts into complete 3D cinematic scenes.
+
+Instead of generating raw, uneditable 3D meshes locally (which causes high hardware overhead and topological errors), the product acts as a **Cloud-Orchestrated 3D Set Dresser and Cinematographer**. It translates human language into structured spatial relational graphs, fetches human-modeled 3D assets via open APIs, parameterizes procedural geometry node environments, and compiles everything into a fully editable `.blend` file.
+
+---
+
+## 2. System Architecture & The 3-Agent Cloud Pipeline
+
+To guarantee low latency, zero hardware friction for the user, and IP protection, all reasoning occurs on a private cloud server (FastAPI). The architecture decouples into **three specialized AI Agents**:
+
+```
+[ User Text Prompt ] 
+       │
+       ▼ (Blender Extension - N-Panel UI)
+[ Async HTTP POST Request ] 
+       │
+       ▼ (Cloud FastAPI Backend)
+ ┌─────────────────────────────────────────────────────────────┐
+ │  1. THE PROCEDURAL ARCHITECT (Environment & Macro-Structures)│
+ │     • Parses macro environment (e.g., "medieval hallway"). │
+ │     • Outputs parameter dictionary for Geometry Nodes.     │
+ ├─────────────────────────────────────────────────────────────┤
+ │  2. THE ASSET FINDER (Micro-Objects & Props)                │
+ │     • Extracts discrete objects (e.g., "leather chair").    │
+ │     • Queries Sketchfab / Poly Haven APIs for GLTF/Blend.  │
+ ├─────────────────────────────────────────────────────────────┤
+ │  3. THE SPATIAL DIRECTOR (Relational Math & Cinematography) │
+ │     • Applies SceneCraft skill functions & OptiScene logic. │
+ │     • Calculates absolute X,Y,Z coords, rot, scale.         │
+ │     • Generates 3-point lighting & camera track keyframes.  │
+ └─────────────────────────────────────────────────────────────┘
+       │
+       ▼ (JSON Payload Stream)
+[ Blender Scene Compiler (compiler.py) ]
+       │ ──> Downloads Assets via Background Thread
+       │ ──> Sets Geometry Nodes Sockets
+       │ ──> Executes `scene.ray_cast()` Surface Snapping
+       ▼
+[ Render-Ready 3D Viewport Scene ]
+
+```
+
+---
+
+## 3. Strict Execution Protocol & Core Engine Features
+
+### A. The JSON Contract (Cloud to Client Payload)
+
+The Blender extension expects a strictly validated JSON structure from the server:
+
+```json
+{
+  "procedural_environment": {
+    "node_group_name": "Hallway_Generator",
+    "parameters": {
+      "Length": 30.0,
+      "Width": 6.0,
+      "Arch_Style": 2
+    }
+  },
+  "assets": [
+    {
+      "name": "Vintage_Chair",
+      "source_url": "https://api.polyhaven.com/files/vintage_chair.glb",
+      "transform": {
+        "location": [2.1, 4.5, 1.2],
+        "rotation": [0.0, 0.0, 1.57],
+        "scale": [1.0, 1.0, 1.0]
+      },
+      "physics_snap": true
+    }
+  ],
+  "cinematography": {
+    "camera": {
+      "focal_length": 35,
+      "keyframes": [
+        {"frame": 1, "location": [0.0, -5.0, 1.5], "look_at": [2.1, 4.5, 1.0]},
+        {"frame": 120, "location": [2.0, -2.0, 1.8], "look_at": [2.1, 4.5, 1.0]}
+      ]
+    },
+    "lighting": [
+      {
+        "type": "SPOT",
+        "color": [1.0, 0.8, 0.6],
+        "energy": 1200.0,
+        "location": [0.0, 2.0, 4.0],
+        "rotation": [0.6, 0.0, 0.0]
+      }
+    ]
+  }
+}
+
+```
+
+### B. Client-Side Scene Compiler Engine (`compiler.py`)
+
+1. **Thread Isolation:** All network requests and asset file downloads execute inside a Python `threading.Thread`. The main Blender UI thread polls completion status via `bpy.app.timers`, preventing viewport lockup.
+2. **Deterministic Physics Snapping:** After object placement, the compiler fires a downward `mathutils.Vector((0, 0, -1))` ray via `context.scene.ray_cast()`. Objects calculate their lowest global bounding-box Z-vertex and snap directly to the nearest floor polygon.
+3. **Geometry Node Socket Injection:** Parameters are mapped dynamically using internal socket identifiers (`node_group.inputs[i].identifier`), bypassing Blender's localization string renaming bugs.
+
+---
+
+## 4. Product Execution Roadmap
+
+* **Phase 1 (MVP - Weeks 1–3):** Local client build using Blender 4.2+ `blender_manifest.toml`. Primitive block-out engine testing spatial logic and raycasting snapping.
+* **Phase 2 (Cloud Integration - Weeks 4–6):** FastAPI backend launch connecting Groq API (Llama 3/Mixtral) to [Poly Haven API](https://polyhaven.com/our-api?utm_source=gemini) and [Sketchfab API](https://sketchfab.com/developers?utm_source=gemini).
+* **Phase 3 (Procedural Core - Weeks 7–9):** Integration of bundled Geometry Node assets (Buildings, Landscapes, Rooms) controlled via parameter dictionary inputs.
+* **Phase 4 (Monetization & Release - Weeks 10–12):** License key authentication in N-Panel. Commercial rollout under a $19/month subscription or $149 lifetime key model.
+
+---
+
+## 5. Review Guidelines for AI Model Verification
+
+When passing this plan to external AI models or technical reviewers, instruct them to evaluate against these specific metrics:
+
+> **Review Prompt for External AI Evaluators:**
+> "Review the technical architectural plan for 'AI Director Pro' above. Evaluate it across the following four dimensions:
+> 1. **Blender API Safety:** Does the use of `bpy.app.timers`, background threads, and `scene.ray_cast()` correctly handle Blender's thread-safety constraints?
+> 2. **Commercial Licensing & GPL Compliance:** Does separating the Python extension (client) from the cloud backend (FastAPI LLM pipeline) adequately protect corporate IP under Blender's GNU GPL license?
+> 3. **Latency & Scalability:** Is the 'Zero-Infra, API-First' approach using open asset APIs (Poly Haven/Sketchfab) superior in speed and cost to local text-to-3D mesh generation?
+> 4. **Edge-Case Hazards:** Identify any potential failure points in the JSON schema or execution logic when scaling to multi-room or complex scenes."
+> 
+
+If we remove the generative 3D fallback (like Meshy or TRELLIS), we are taking a much more deterministic and reliable path. Instead of trying to magically generate new 3D meshes out of thin air, our product becomes an **AI-Driven Set Dresser and Orchestrator**.
+
+This is actually a massive advantage for professional workflows. Generative 3D models often have terrible topology, messy UV maps, and bad textures. By exclusively using pre-existing, human-made assets from established libraries, we guarantee that every scene our product creates is 100% production-ready, cleanly modeled, and natively compatible with Blender's render engines.
+
+Here is exactly how we build the product using only "normal" procedural and deterministic methods:
+
+### 1. The Asset Backbone: Open APIs
+
+Instead of generative AI, we wire our cloud server directly into the biggest open-source 3D asset libraries.
+
+* **Poly Haven:** We will use the free [Poly Haven API](https://polyhaven.com/our-api?utm_source=gemini). They provide incredibly high-quality, CC0-licensed HDRIs (for realistic skybox lighting), PBR materials, and 3D models.
+* **BlenderKit / Sketchfab:** We integrate endpoints like the [BlenderKit API](https://parse.bot/marketplace/1eaf1d01-17ec-4bc1-a43b-7fc0968c2f63/blenderkit-com-api?utm_source=gemini) to search a massive database of human-made assets.
+
+**How it works:** When a user types *"A modern living room with a leather couch and indoor plants,"* our LLM extracts those keywords and hits the BlenderKit and Poly Haven search endpoints. It retrieves the exact download URLs for the highest-rated "leather couch" and "indoor plant" `.blend` or `.glb` files.
+
+### 2. Procedural Architecture (Using Geometry Nodes)
+
+If we can't generate a custom building using AI, how do we create the *environment* (walls, floors, terrain, roads)? We use **Blender's Geometry Nodes**.
+
+We will bundle a library of pre-made, parametric "Base Environments" inside our extension.
+
+* **The LLM's Job:** Instead of placing 1,000 individual bricks, the LLM writes the Python (`bpy`) commands to adjust the sliders on our Geometry Nodes.
+* **Example:** If the prompt asks for a *"long, curved medieval hallway,"* the LLM selects our bundled `Hallway_Generator.blend`. It then sets `bpy.data.objects["Hallway"].modifiers["GeometryNodes"]["Socket_Length"] = 50` and `["Socket_Curve"] = 0.5`.
+* This gives us infinite architectural variations without ever needing a text-to-3D model.
+
+### 3. The Scene Compiler: Raycasting and Snapping
+
+With the assets downloaded and the room generated, the LLM maps out the spatial logic (e.g., "plant is NEXT TO couch").
+
+Because we are dealing with standard bounding boxes, our Python execution script is incredibly robust:
+
+1. **Spawn & Download:** The script downloads the couch and plant into the scene.
+2. **Positioning:** It moves the plant to the X/Y coordinates defined by the LLM.
+3. **Gravity Snap (Raycasting):** It uses `scene.ray_cast()` to shoot a line straight down from the plant, finding the exact Z-height of the floor mesh, and snaps the plant directly to it so it doesn't float.
+
+### 4. Cinematic Lighting and Atmosphere
+
+Because we aren't relying on AI to "paint" the lighting onto a generated mesh, we have to create real, physically accurate lighting setups.
+
+* The LLM parses the mood (e.g., "A moody, cinematic sunset").
+* It queries the [Poly Haven API](https://polyhaven.com/our-api?utm_source=gemini) for an HDRI tagged with "sunset".
+* It generates Python code to create a Principled Volume cube over the whole scene (for fog/god rays) and places a Sun lamp matching the angle of the HDRI sun.
+

@@ -1,0 +1,431 @@
+{
+  "schema_version": "0.1",
+  "job_id": "01jfix01space00000000000000000",
+  "prompt": "Space station deck, crates, antenna, Earth in the HDRI.",
+  "domain": "space",
+  "world": {
+    "extent_x_m": 24.0,
+    "extent_y_m": 18.0,
+    "height_m": 8.0,
+    "wall_thickness_m": 0.15,
+    "openings": [],
+    "ground": "metal_deck",
+    "terrain_amp_m": 0.0
+  },
+  "objects": [
+    {
+      "id": "mod_1",
+      "category": "module",
+      "part": "module",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        4.0,
+        4.0,
+        3.0
+      ]
+    },
+    {
+      "id": "mod_2",
+      "category": "module",
+      "part": "module",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        3.0,
+        3.0,
+        2.5
+      ]
+    },
+    {
+      "id": "crate_1",
+      "category": "crate",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.2,
+        1.2,
+        1.2
+      ]
+    },
+    {
+      "id": "crate_2",
+      "category": "crate",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.2,
+        1.2,
+        1.2
+      ]
+    },
+    {
+      "id": "crate_3",
+      "category": "crate",
+      "part": "mass",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.2,
+        1.2,
+        1.2
+      ]
+    },
+    {
+      "id": "ant_1",
+      "category": "antenna",
+      "part": "pole",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        0.3,
+        0.3,
+        6.0
+      ]
+    },
+    {
+      "id": "panel_1",
+      "category": "solar_panel",
+      "part": "slab",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        4.0,
+        2.0,
+        0.08
+      ]
+    },
+    {
+      "id": "tank_1",
+      "category": "tank",
+      "part": "proxy_cylinder",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        1.5,
+        1.5,
+        2.0
+      ]
+    },
+    {
+      "id": "planet_1",
+      "category": "planet",
+      "part": "proxy_sphere",
+      "relations": [],
+      "style_tags": [],
+      "catalog_id": null,
+      "license": null,
+      "real_size_m": [
+        16.0,
+        16.0,
+        16.0
+      ]
+    }
+  ],
+  "layout": {
+    "mod_1": {
+      "location_m": [
+        6.0,
+        8.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "mod_2": {
+      "location_m": [
+        16.0,
+        8.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "crate_1": {
+      "location_m": [
+        10.0,
+        5.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "crate_2": {
+      "location_m": [
+        11.4,
+        5.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "crate_3": {
+      "location_m": [
+        10.7,
+        6.4,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "ant_1": {
+      "location_m": [
+        20.0,
+        14.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "panel_1": {
+      "location_m": [
+        12.0,
+        14.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "tank_1": {
+      "location_m": [
+        4.0,
+        14.0,
+        0.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": true,
+      "infeasibility": null
+    },
+    "planet_1": {
+      "location_m": [
+        12.0,
+        58.0,
+        8.0
+      ],
+      "rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "support": "ground",
+      "snap_z_pending": false,
+      "infeasibility": null
+    }
+  },
+  "camera": {
+    "preset": "wide_24",
+    "look_at_id": "mod_1"
+  },
+  "camera_pose": {
+    "location_m": [
+      2.0,
+      1.5,
+      1.6
+    ],
+    "look_at_m": [
+      12.0,
+      9.0,
+      1.0
+    ],
+    "focal_mm": 24.0
+  },
+  "lights": [
+    {
+      "role": "key",
+      "type": "AREA",
+      "energy": 250,
+      "color_temp_k": 4500,
+      "offset_from_camera_m": [
+        1.2,
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "role": "fill",
+      "type": "AREA",
+      "energy": 80,
+      "color_temp_k": 5000,
+      "offset_from_camera_m": [
+        -1.5,
+        0.2,
+        0.4
+      ]
+    },
+    {
+      "role": "rim",
+      "type": "AREA",
+      "energy": 40,
+      "color_temp_k": 5500,
+      "offset_from_camera_m": [
+        0.0,
+        0.3,
+        1.2
+      ]
+    }
+  ],
+  "hdri": null,
+  "light_preset": "stars",
+  "fallbacks": [
+    {
+      "object_id": "mod_1",
+      "reason": "no_catalog_hit",
+      "primitive": "module"
+    },
+    {
+      "object_id": "mod_2",
+      "reason": "no_catalog_hit",
+      "primitive": "module"
+    },
+    {
+      "object_id": "crate_1",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "crate_2",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "crate_3",
+      "reason": "no_catalog_hit",
+      "primitive": "mass"
+    },
+    {
+      "object_id": "ant_1",
+      "reason": "no_catalog_hit",
+      "primitive": "pole"
+    },
+    {
+      "object_id": "panel_1",
+      "reason": "no_catalog_hit",
+      "primitive": "slab"
+    },
+    {
+      "object_id": "tank_1",
+      "reason": "no_catalog_hit",
+      "primitive": "proxy_cylinder"
+    },
+    {
+      "object_id": "planet_1",
+      "reason": "no_catalog_hit",
+      "primitive": "proxy_sphere"
+    }
+  ],
+  "warnings": [
+    "phase0:primitives_only"
+  ],
+  "attribution": [],
+  "status": "ready"
+}

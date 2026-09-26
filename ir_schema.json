@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "job_id", "prompt", "domain", "world", "objects",
+    "layout", "camera", "camera_pose", "lights", "hdri", "light_preset",
+    "fallbacks", "warnings", "attribution", "status"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "const": "0.1" },
+    "job_id": { "type": "string", "minLength": 1 },
+    "prompt": { "type": "string" },
+    "domain": {
+      "type": "string",
+      "enum": ["interior", "park", "forest", "city", "zoo", "space", "beach", "generic"]
+    },
+    "world": { "$ref": "#/$defs/WorldSpec" },
+    "objects": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 90,
+      "items": { "$ref": "#/$defs/SceneObject" }
+    },
+    "layout": { "type": "object", "additionalProperties": { "$ref": "#/$defs/Pose" } },
+    "camera": { "$ref": "#/$defs/CameraDraft" },
+    "camera_pose": { "$ref": "#/$defs/CameraPose" },
+    "lights": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/LightSpec" }
+    },
+    "hdri": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "catalog_id": { "type": "string" },
+        "intensity": { "type": "number" },
+        "rotation_z": { "type": "number" },
+        "asset_url": { "type": ["string", "null"] }
+      }
+    },
+    "light_preset": {
+      "type": "string",
+      "enum": ["high_key", "soft_day", "warm_interior", "noir", "overcast", "sunset", "night_urban", "stars"]
+    },
+    "fallbacks": { "type": "array", "items": { "$ref": "#/$defs/Fallback" } },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "surfaces": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "attribution": { "type": "array", "items": { "$ref": "#/$defs/Attribution" } },
+    "status": {
+      "type": "string",
+      "enum": ["queued", "planning", "solving", "ready", "applying", "complete", "failed"]
+    }
+  },
+  "$defs": {
+    "WorldSpec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["extent_x_m", "extent_y_m", "height_m", "wall_thickness_m", "openings", "ground", "terrain_amp_m"],
+      "properties": {
+        "extent_x_m": { "type": "number", "minimum": 4.0, "maximum": 250.0 },
+        "extent_y_m": { "type": "number", "minimum": 4.0, "maximum": 250.0 },
+        "height_m": { "type": "number", "minimum": 2.0, "maximum": 40.0 },
+        "wall_thickness_m": { "type": "number" },
+        "openings": { "type": "array", "items": { "$ref": "#/$defs/Opening" } },
+        "ground": {
+          "type": "string",
+          "enum": ["floor", "grass", "dirt", "pavement", "sand", "water_edge", "metal_deck", "void"]
+        },
+        "terrain_amp_m": { "type": "number", "minimum": 0.0, "maximum": 3.0 }
+      }
+    },
+    "Opening": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "wall", "offset_m", "width_m", "sill_m", "height_m"],
+      "properties": {
+        "type": { "type": "string", "enum": ["door", "window"] },
+        "wall": { "type": "string", "enum": ["wall.north", "wall.south", "wall.east", "wall.west"] },
+        "offset_m": { "type": "number" },
+        "width_m": { "type": "number" },
+        "sill_m": { "type": "number" },
+        "height_m": { "type": "number" }
+      }
+    },
+    "SceneObject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "category", "part", "relations", "style_tags", "catalog_id", "license", "real_size_m"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{0,31}$" },
+        "category": { "type": "string", "pattern": "^[a-z][a-z0-9_]{0,31}$" },
+        "part": {
+          "type": "string",
+          "enum": ["slab", "beam", "cover", "mass", "pole", "board", "seat", "puddle", "foliage", "enclosure", "module", "proxy_box", "proxy_cylinder", "proxy_sphere"]
+        },
+        "relations": { "type": "array", "items": { "$ref": "#/$defs/Relation" } },
+        "style_tags": { "type": "array", "items": { "type": "string" } },
+        "catalog_id": { "type": ["string", "null"] },
+        "license": { "type": ["string", "null"], "enum": ["CC0", null] },
+        "asset_url": { "type": ["string", "null"] },
+        "real_size_m": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": { "type": "number" }
+        }
+      }
+    },
+    "Relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "target", "clearance_m"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["on", "next_to", "facing", "against_wall", "in_front_of", "behind", "centered_on", "along", "scatter"]
+        },
+        "target": { "type": "string" },
+        "clearance_m": { "type": "number" }
+      }
+    },
+    "Pose": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["location_m", "rotation_euler_rad", "scale", "support", "snap_z_pending", "infeasibility"],
+      "properties": {
+        "location_m": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "number" } },
+        "rotation_euler_rad": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "number" } },
+        "scale": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "number" } },
+        "support": { "type": "string" },
+        "snap_z_pending": { "type": "boolean" },
+        "infeasibility": { "type": ["string", "null"] }
+      }
+    },
+    "CameraDraft": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["preset", "look_at_id"],
+      "properties": {
+        "preset": { "type": "string", "enum": ["establishing_35", "medium_50", "wide_24"] },
+        "look_at_id": { "type": ["string", "null"] }
+      }
+    },
+    "CameraPose": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["location_m", "look_at_m", "focal_mm"],
+      "properties": {
+        "location_m": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "number" } },
+        "look_at_m": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "number" } },
+        "focal_mm": { "type": "number" }
+      }
+    },
+    "LightSpec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role", "type", "energy", "color_temp_k", "offset_from_camera_m"],
+      "properties": {
+        "role": { "type": "string", "enum": ["key", "fill", "rim", "sun"] },
+        "type": { "type": "string", "enum": ["AREA", "SUN"] },
+        "energy": { "type": "number" },
+        "color_temp_k": { "type": "integer" },
+        "offset_from_camera_m": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "number" } }
+      }
+    },
+    "Fallback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["object_id", "reason", "primitive"],
+      "properties": {
+        "object_id": { "type": "string" },
+        "reason": {
+          "type": "string",
+          "enum": ["no_catalog_hit", "scale_clamped", "relation_dropped", "out_of_ground", "wall_on_outdoor"]
+        },
+        "primitive": { "type": "string" }
+      }
+    },
+    "Attribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["catalog_id", "license", "text"],
+      "properties": {
+        "catalog_id": { "type": "string" },
+        "license": { "type": "string", "enum": ["CC0"] },
+        "text": { "type": "string" }
+      }
+    }
+  }
+}
