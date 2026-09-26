@@ -1,0 +1,13 @@
+schema_version = "1.0.0"
+id = "ai_director"
+version = "0.4.2"
+name = "AI Director"
+tagline = "Text-to-scene compiler (SceneIR)"
+maintainer = "AI Director"
+type = "add-on"
+tags = ["Scene", "Animation"]
+blender_version_min = "4.2.0"
+license = ["SPDX:GPL-3.0-or-later"]
+
+[permissions]
+network = "Optional connection to the local AI Director planner API"

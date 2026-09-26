@@ -1,0 +1,10 @@
+{
+  "provider": "openai_compat",
+  "model": "openai/gpt-oss-20b",
+  "api_key_env": "GROQ_API_KEY",
+  "base_url": "https://api.groq.com/openai/v1",
+  "api_key": "",
+  "temperature": 0.4,
+  "max_tokens": 1024,
+  "workspace_root": "."
+}
